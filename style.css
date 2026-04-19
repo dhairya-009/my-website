@@ -41,4 +41,9 @@ button {
     border-radius: 10px;
     text-align: center;
 
+body.light-mode {
+    background: white;
+    color: black;
+}
+
 }
