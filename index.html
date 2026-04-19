@@ -10,54 +10,29 @@
 
 <body>
 
-<nav>
+<nav class="navbar">
     <h2 class="logo">🚀 DhairyaEditsz</h2>
 
     <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Game</a>
     </div>
 
     <button onclick="toggleMode()" id="modeBtn">🌙</button>
 </nav>
 
 <header>
-    <h1 id="typing"></h1>
+    <h1>Just a little project, for fun 🚀</h1>
     <p><b>Learning coding & building cool projects 😎</b></p>
-    <button onclick="showMessage()">Click Me</button>
 </header>
 
 <script>
-function showMessage() {
-    alert("🔥 Welcome to my advanced website!");
-}
-
-// Typing effect
-let text = "Just a little project, for fun 🚀";
-let i = 0;
-
-function typeEffect() {
-    if (i < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 50);
-    }
-}
-typeEffect();
-
-// Dark Mode
 function toggleMode() {
     document.body.classList.toggle("light-mode");
 
     let btn = document.getElementById("modeBtn");
-
-    if (document.body.classList.contains("light-mode")) {
-        btn.innerText = "🌞";
-    } else {
-        btn.innerText = "🌙";
-    }
+    btn.innerText = document.body.classList.contains("light-mode") ? "🌞" : "🌙";
 }
 </script>
 
