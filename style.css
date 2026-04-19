@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.3);
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00c896;
+}
+
+header {
+    text-align: center;
+    margin-top: 80px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #00c896;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.card {
+    margin: 40px auto;
+    padding: 20px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
