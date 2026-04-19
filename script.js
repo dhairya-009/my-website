@@ -1,3 +1,3 @@
 function showMessage() {
-    alert("🔥 Welcome to my advanced website!");
+    alert("🔥 there is nothing we can do !");
 }
