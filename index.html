@@ -4,52 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DhairyaEditsz</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
+<nav>
     <h2 class="logo">🚀 DhairyaEditsz</h2>
 
     <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="game.html">Game</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <button onclick="toggleMode()" id="modeBtn">🌙</button>
 </nav>
 
-<header class="fade-in">
+<header>
     <h1 id="typing"></h1>
     <p><b>Learning coding & building cool projects 😎</b></p>
+    <button onclick="showMessage()">Click Me</button>
 </header>
 
-<section id="projects">
-
-<div class="card fade-in">
-    <h3>🎮 Game Website</h3>
-    <p>Fun browser games coming soon</p>
-</div>
-
-<div class="card fade-in">
-    <h3>📊 Study Planner</h3>
-    <p>Helps students manage time</p>
-</div>
-
-</section>
-
-<section class="gallery fade-in">
-    <h2>My Work</h2>
-    <img src="https://via.placeholder.com/200">
-    <img src="https://via.placeholder.com/200">
-</section>
-
 <script>
-// Typing
+function showMessage() {
+    alert("🔥 Welcome to my advanced website!");
+}
+
+// Typing effect
 let text = "Just a little project, for fun 🚀";
 let i = 0;
+
 function typeEffect() {
     if (i < text.length) {
         document.getElementById("typing").innerHTML += text.charAt(i);
@@ -59,22 +47,18 @@ function typeEffect() {
 }
 typeEffect();
 
-// Dark mode
+// Dark Mode
 function toggleMode() {
     document.body.classList.toggle("light-mode");
-    let btn = document.getElementById("modeBtn");
-    btn.innerText = document.body.classList.contains("light-mode") ? "🌞" : "🌙";
-}
 
-// Scroll animation
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".fade-in").forEach(el => {
-        let top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 50) {
-            el.classList.add("show");
-        }
-    });
-});
+    let btn = document.getElementById("modeBtn");
+
+    if (document.body.classList.contains("light-mode")) {
+        btn.innerText = "🌞";
+    } else {
+        btn.innerText = "🌙";
+    }
+}
 </script>
 
 </body>
