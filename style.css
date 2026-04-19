@@ -5,36 +5,44 @@ body {
     color: white;
 }
 
-/* NAVBAR */
-nav {
+/* NAVBAR FIX */
+.navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 15px 30px;
 }
 
-.logo { flex: 1; }
+/* Logo left */
+.logo {
+    font-size: 20px;
+}
 
+/* Center links */
 .nav-links {
-    flex: 2;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
+/* Button right */
 #modeBtn {
-    flex: 1;
-    text-align: right;
+    padding: 8px 15px;
 }
 
+/* Links */
 nav a {
     color: white;
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #00c896;
+}
+
 /* HEADER */
 header {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 /* CARDS */
@@ -60,11 +68,11 @@ header {
 
 /* BUTTON */
 button {
-    padding: 10px 20px;
     background: #00c896;
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 /* SCROLL ANIMATION */
@@ -85,19 +93,25 @@ body.light-mode {
     color: black;
 }
 
-/* MOBILE */
+body.light-mode nav a {
+    color: black;
+}
+
+body.light-mode button {
+    background: black;
+    color: white;
+}
+
+/* MOBILE FIX */
 @media (max-width: 600px) {
-    nav {
+
+    .navbar {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    #modeBtn {
-        text-align: center;
     }
 }
