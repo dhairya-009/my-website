@@ -6,13 +6,23 @@ body {
     transition: 0.3s;
 }
 @media (max-width: 600px) {
-   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: rgba(0,0,0,0.3);
-    flex-wrap: wrap;
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav div {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #modeBtn {
+        margin-top: 10px;
+    }
 }
 }
 /* Navbar */
