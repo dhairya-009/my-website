@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    font-family: Arial;
     background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
     color: white;
 }
@@ -43,8 +41,4 @@ button {
     border-radius: 10px;
     text-align: center;
 
-    .light-mode {
-    background: white;
-    color: black;
-}
 }
