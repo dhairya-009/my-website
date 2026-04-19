@@ -5,7 +5,16 @@ body {
     color: white;
     transition: 0.3s;
 }
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .card {
+        width: 90%;
+    }
+}
 /* Navbar */
 nav {
     display: flex;
