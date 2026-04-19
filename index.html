@@ -9,7 +9,7 @@
 
 <body>
 
-<nav>
+<nav class="navbar">
     <h2 class="logo">🚀 DhairyaEditsz</h2>
 
     <div class="nav-links">
@@ -26,7 +26,6 @@
     <p><b>Learning coding & building cool projects 😎</b></p>
 </header>
 
-<!-- PROJECT SECTION -->
 <section id="projects">
 
 <div class="card fade-in">
@@ -39,24 +38,16 @@
     <p>Helps students manage time</p>
 </div>
 
-<div class="card fade-in">
-    <h3>🛠️ Tools Website</h3>
-    <p>Useful tools for daily work</p>
-</div>
-
 </section>
 
-<!-- IMAGE GALLERY -->
 <section class="gallery fade-in">
     <h2>My Work</h2>
-    <img src="https://via.placeholder.com/200">
     <img src="https://via.placeholder.com/200">
     <img src="https://via.placeholder.com/200">
 </section>
 
 <script>
-
-// Typing effect
+// Typing
 let text = "Just a little project, for fun 🚀";
 let i = 0;
 function typeEffect() {
@@ -71,7 +62,6 @@ typeEffect();
 // Dark mode
 function toggleMode() {
     document.body.classList.toggle("light-mode");
-
     let btn = document.getElementById("modeBtn");
     btn.innerText = document.body.classList.contains("light-mode") ? "🌞" : "🌙";
 }
@@ -85,7 +75,6 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-
 </script>
 
 </body>
