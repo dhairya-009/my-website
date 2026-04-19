@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DhairyaEditsz</title>
@@ -13,8 +11,9 @@
 <body>
 
 <nav>
-    <h2>🚀 DhairyaEditsz</h2>
-    <div>
+    <h2 class="logo">🚀 DhairyaEditsz</h2>
+
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
@@ -35,19 +34,7 @@ function showMessage() {
     alert("🔥 Welcome to my advanced website!");
 }
 
-function toggleMode() {
-    document.body.classList.toggle("light-mode");
-
-    let btn = document.getElementById("modeBtn");
-
-    if (document.body.classList.contains("light-mode")) {
-        btn.innerText = "🌞";
-    } else {
-        btn.innerText = "🌙";
-    }
-}
-
-// Typing Effect
+// Typing effect
 let text = "Just a little project, for fun 🚀";
 let i = 0;
 
@@ -59,7 +46,20 @@ function typeEffect() {
     }
 }
 typeEffect();
+
+// Dark Mode
+function toggleMode() {
+    document.body.classList.toggle("light-mode");
+
+    let btn = document.getElementById("modeBtn");
+
+    if (document.body.classList.contains("light-mode")) {
+        btn.innerText = "🌞";
+    } else {
+        btn.innerText = "🌙";
+    }
+}
 </script>
-    
+
 </body>
 </html>
