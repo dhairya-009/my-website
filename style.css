@@ -56,23 +56,23 @@ button:hover {
     text-align: center;
 }
 
-/* 🌙 Light Mode */
+/* 🌙 Light Mode FULL FIX */
 body.light-mode {
-    background: white;
-    color: black;
+    background: white !important;
+    color: black !important;
 }
 
 body.light-mode nav {
-    background: #eee;
+    background: #eeeeee !important;
 }
 
-body.light-mode a {
-    color: black;
+body.light-mode nav a {
+    color: black !important;
 }
 
 body.light-mode button {
-    background: black;
-    color: white;
+    background: black !important;
+    color: white !important;
 }
 
 /* 📱 Responsive */
