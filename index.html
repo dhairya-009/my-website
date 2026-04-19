@@ -2,37 +2,52 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DhairyaEditsz</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-    <h2>🚀 DhairyaEditsz Welcomes you</h2>
+    <h2>🚀 DhairyaEditsz</h2>
     <div>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </div>
+
+    <button onclick="toggleMode()" id="modeBtn">🌙</button>
 </nav>
 
-    
-<button onclick="toggleMode()">🌙</button>
-    
 <header>
-    <h1>Just a little project, for fun</h1>
+    <h1 id="typing"></h1>
     <p><b>Learning coding & building cool projects 😎</b></p>
     <button onclick="showMessage()">Click Me</button>
 </header>
+
 <script>
 function showMessage() {
-    alert("Working!");
+    alert("🔥 Welcome to my advanced website!");
 }
+
+// Typing Effect
+let text = "Just a little project, for fun 🚀";
+let i = 0;
+
+function typeEffect() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 50);
+    }
+}
+typeEffect();
 </script>
+
 <script src="script.js"></script>
-    
 
 </body>
 </html>
