@@ -5,37 +5,36 @@ body {
     color: white;
     transition: 0.3s;
 }
-@media (max-width: 600px) {
-    
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
 
-    nav div {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #modeBtn {
-        margin-top: 10px;
-    }
-}
-}
-/* Navbar */
+/* NAVBAR */
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background: rgba(0,0,0,0.3);
+    justify-content: space-between;
+    padding: 15px 20px;
 }
 
+/* Logo */
+.logo {
+    flex: 1;
+}
+
+/* Center links */
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Button right */
+#modeBtn {
+    flex: 1;
+    text-align: right;
+}
+
+/* Links */
 nav a {
-    margin: 0 10px;
     color: white;
     text-decoration: none;
 }
@@ -44,13 +43,13 @@ nav a:hover {
     color: #00c896;
 }
 
-/* Header */
+/* HEADER */
 header {
     text-align: center;
     margin-top: 100px;
 }
 
-/* Buttons */
+/* BUTTONS */
 button {
     padding: 10px 20px;
     background: #00c896;
@@ -65,27 +64,17 @@ button:hover {
     box-shadow: 0 0 15px #00c896;
 }
 
-/* Cards */
-.card {
-    margin: 40px auto;
-    padding: 20px;
-    width: 300px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* 🌙 Light Mode FULL FIX */
+/* LIGHT MODE */
 body.light-mode {
     background: white !important;
     color: black !important;
 }
 
 body.light-mode nav {
-    background: #eeeeee !important;
+    background: #eee !important;
 }
 
-body.light-mode nav a {
+body.light-mode a {
     color: black !important;
 }
 
@@ -94,18 +83,31 @@ body.light-mode button {
     color: white !important;
 }
 
-/* 📱 Responsive */
+/* MOBILE */
 @media (max-width: 600px) {
+
     nav {
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        flex: unset;
+    }
+
+    .nav-links {
+        flex: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #modeBtn {
+        flex: unset;
         text-align: center;
     }
 
     header {
         margin-top: 60px;
-    }
-
-    .card {
-        width: 90%;
     }
 }
