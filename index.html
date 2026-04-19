@@ -1,36 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cool Website</title>
 
-    <h1>Welcome to My Website 🚀</h1>
-    <p>This is my first website.</p>
-
-    <button onclick="showMessage()">Click Me</button>
-
-    <script>
-        function showMessage() {
-            alert("Hello! You clicked the button 😄");
-        }
-    </script>
-    <style>
+<style>
     body {
-        background-color: #121212;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
         color: white;
         text-align: center;
-        font-family: Arial;
+    }
+
+    header {
+        padding: 40px;
+        font-size: 28px;
+        font-weight: bold;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.1);
+        margin: 20px auto;
+        padding: 20px;
+        width: 300px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
     }
 
     button {
-        padding: 10px 20px;
-        background-color: blue;
-        color: white;
+        padding: 12px 20px;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
+        background: #00c896;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00a67d;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 14px;
+        opacity: 0.7;
     }
 </style>
+</head>
+
+<body>
+
+<header>
+    🚀 Welcome to My Website
+</header>
+
+<div class="card">
+    <h2>About Me</h2>
+    <p>I am learning coding and building cool projects!</p>
+</div>
+
+<div class="card">
+    <h2>My Projects</h2>
+    <p>Coming soon: Games, Tools, and more 😎</p>
+</div>
+
+<button onclick="showMessage()">Click Me</button>
+
+<footer>
+    © 2026 My Website | Made with ❤️
+</footer>
+
+<script>
+function showMessage() {
+    alert("🔥 You clicked the button! More features coming soon.");
+}
+</script>
 
 </body>
 </html>
