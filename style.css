@@ -1,11 +1,16 @@
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
     color: white;
+    transition: 0.3s;
 }
 
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 30px;
     background: rgba(0,0,0,0.3);
 }
@@ -20,19 +25,28 @@ nav a:hover {
     color: #00c896;
 }
 
+/* Header */
 header {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
+/* Buttons */
 button {
     padding: 10px 20px;
     background: #00c896;
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+button:hover {
+    box-shadow: 0 0 15px #00c896;
+}
+
+/* Cards */
 .card {
     margin: 40px auto;
     padding: 20px;
@@ -40,10 +54,39 @@ button {
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
     text-align: center;
+}
 
+/* 🌙 Light Mode */
 body.light-mode {
     background: white;
     color: black;
 }
 
+body.light-mode nav {
+    background: #eee;
+}
+
+body.light-mode a {
+    color: black;
+}
+
+body.light-mode button {
+    background: black;
+    color: white;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        margin-top: 60px;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
