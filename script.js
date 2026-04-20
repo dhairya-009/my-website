@@ -1,17 +1,19 @@
-function showMessage() {
-    alert("🔥 Welcome to my advanced website!");
-}
+// Toggle Dark/Light Mode
+const btn = document.getElementById("modeBtn");
 
-function toggleMode() {
+btn.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
-
-    let btn = document.getElementById("modeBtn");
 
     if (document.body.classList.contains("light-mode")) {
         btn.innerText = "🌞";
     } else {
         btn.innerText = "🌙";
     }
+});
+
+// Button Alert
+function showMessage() {
+    alert("🔥 Welcome to my advanced website!");
 }
 
 // Typing Effect
