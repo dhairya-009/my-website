@@ -1,3 +1,9 @@
+// Loader hide after page loads
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    loader.classList.add("hidden");
+});
+
 function showMessage() {
     alert("🔥 Welcome to my advanced website!");
 }
