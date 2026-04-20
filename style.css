@@ -5,16 +5,7 @@ body {
     color: white;
     transition: 0.3s;
 }
-@media (max-width: 600px) {
-   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: rgba(0,0,0,0.3);
-    flex-wrap: wrap;
-}
-}
+
 /* Navbar */
 nav {
     display: flex;
@@ -55,19 +46,13 @@ button:hover {
     box-shadow: 0 0 15px #00c896;
 }
 
-/* Cards */
-.card {
-    margin: 40px auto;
-    padding: 20px;
-    width: 300px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    text-align: center;
-}
+/* ========================= */
+/* 🌙 LIGHT MODE FIX (STRONG) */
+/* ========================= */
 
-/* 🌙 Light Mode FULL FIX */
 body.light-mode {
     background: white !important;
+    background-image: none !important; /* 🔥 IMPORTANT */
     color: black !important;
 }
 
@@ -82,20 +67,4 @@ body.light-mode nav a {
 body.light-mode button {
     background: black !important;
     color: white !important;
-}
-
-/* 📱 Responsive */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header {
-        margin-top: 60px;
-    }
-
-    .card {
-        width: 90%;
-    }
 }
