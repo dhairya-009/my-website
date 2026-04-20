@@ -10,10 +10,10 @@
 
 <body>
 
-<nav class="navbar">
-    <h2 class="logo">🚀 DhairyaEditsz</h2>
+<nav>
+    <h2>🚀 DhairyaEditsz</h2>
 
-    <div class="nav-links">
+    <div>
         <a href="#">Home</a>
         <a href="#">Projects</a>
         <a href="#">Game</a>
@@ -25,14 +25,25 @@
 <header>
     <h1>Just a little project, for fun 🚀</h1>
     <p><b>Learning coding & building cool projects 😎</b></p>
+
+    <button onclick="showMessage()">Click Me</button>
 </header>
 
 <script>
+function showMessage() {
+    alert("🔥 Welcome to my website!");
+}
+
 function toggleMode() {
     document.body.classList.toggle("light-mode");
 
     let btn = document.getElementById("modeBtn");
-    btn.innerText = document.body.classList.contains("light-mode") ? "🌞" : "🌙";
+
+    if (document.body.classList.contains("light-mode")) {
+        btn.innerText = "🌞";
+    } else {
+        btn.innerText = "🌙";
+    }
 }
 </script>
 
