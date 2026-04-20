@@ -2,50 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DhairyaEditsz</title>
-
+<title>Home</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-    <h2>🚀 DhairyaEditsz</h2>
-
+    <h2>🚀 My   Site</h2>
     <div>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Game</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </div>
-
-    <button onclick="toggleMode()" id="modeBtn">🌙</button>
 </nav>
 
 <header>
-    <h1>Just a little project, for fun 🚀</h1>
-    <p><b>Learning coding & building cool projects 😎</b></p>
-
+    <h1>Welcome to My Website</h1>
+    <p>Learning coding & building cool projects 😎</p>
     <button onclick="showMessage()">Click Me</button>
 </header>
 
-<script>
-function showMessage() {
-    alert("🔥 Welcome to my website!");
-}
-
-function toggleMode() {
-    document.body.classList.toggle("light-mode");
-
-    let btn = document.getElementById("modeBtn");
-
-    if (document.body.classList.contains("light-mode")) {
-        btn.innerText = "🌞";
-    } else {
-        btn.innerText = "🌙";
-    }
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
