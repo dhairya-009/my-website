@@ -1,19 +1,17 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
     color: white;
 }
 
-/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 30px;
+    background: rgba(0,0,0,0.3);
 }
 
-/* LINKS */
 nav a {
     margin: 0 10px;
     color: white;
@@ -24,45 +22,24 @@ nav a:hover {
     color: #00c896;
 }
 
-/* HEADER */
 header {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
-/* BUTTON */
 button {
     padding: 10px 20px;
     background: #00c896;
     border: none;
     border-radius: 5px;
     color: white;
-    cursor: pointer;
 }
 
-/* 🌙 LIGHT MODE (IMPORTANT FIX) */
-body.light-mode {
-    background: white !important;
-    color: black !important;
-}
-
-body.light-mode nav {
-    background: #eeeeee !important;
-}
-
-body.light-mode nav a {
-    color: black !important;
-}
-
-body.light-mode button {
-    background: black !important;
-    color: white !important;
-}
-
-/* 📱 MOBILE */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
+.card {
+    margin: 40px auto;
+    padding: 20px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: center;
 }
