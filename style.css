@@ -1,4 +1,3 @@
-/* ================= BASE ================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,7 +6,7 @@ body {
     transition: 0.3s;
 }
 
-/* ================= NAVBAR ================= */
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -26,13 +25,13 @@ nav a:hover {
     color: #00c896;
 }
 
-/* ================= HEADER ================= */
+/* Header */
 header {
     text-align: center;
     margin-top: 100px;
 }
 
-/* ================= BUTTON ================= */
+/* Buttons */
 button {
     padding: 10px 20px;
     background: #00c896;
@@ -47,42 +46,25 @@ button:hover {
     box-shadow: 0 0 15px #00c896;
 }
 
-/* ================= LIGHT MODE (FINAL FIX) ================= */
+/* ========================= */
+/* 🌙 LIGHT MODE FIX (STRONG) */
+/* ========================= */
+
 body.light-mode {
     background: white !important;
-    background-image: none !important; /* 🔥 VERY IMPORTANT */
+    background-image: none !important; /* 🔥 IMPORTANT */
     color: black !important;
 }
 
-/* Force text change */
-body.light-mode * {
-    color: black !important;
-}
-
-/* Navbar */
 body.light-mode nav {
     background: #eeeeee !important;
 }
 
-/* Links */
-body.light-mode a {
+body.light-mode nav a {
     color: black !important;
 }
 
-/* Buttons */
 body.light-mode button {
     background: black !important;
     color: white !important;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header {
-        margin-top: 60px;
-    }
 }
