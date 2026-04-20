@@ -3,38 +3,19 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
     color: white;
-    transition: 0.3s;
 }
 
 /* NAVBAR */
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 15px 20px;
+    align-items: center;
+    padding: 15px 30px;
 }
 
-/* Logo */
-.logo {
-    flex: 1;
-}
-
-/* Center links */
-.nav-links {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Button right */
-#modeBtn {
-    flex: 1;
-    text-align: right;
-}
-
-/* Links */
+/* LINKS */
 nav a {
+    margin: 0 10px;
     color: white;
     text-decoration: none;
 }
@@ -49,7 +30,7 @@ header {
     margin-top: 100px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 button {
     padding: 10px 20px;
     background: #00c896;
@@ -57,24 +38,19 @@ button {
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-button:hover {
-    box-shadow: 0 0 15px #00c896;
-}
-
-/* LIGHT MODE */
+/* 🌙 LIGHT MODE (IMPORTANT FIX) */
 body.light-mode {
     background: white !important;
     color: black !important;
 }
 
 body.light-mode nav {
-    background: #eee !important;
+    background: #eeeeee !important;
 }
 
-body.light-mode a {
+body.light-mode nav a {
     color: black !important;
 }
 
@@ -83,31 +59,10 @@ body.light-mode button {
     color: white !important;
 }
 
-/* MOBILE */
+/* 📱 MOBILE */
 @media (max-width: 600px) {
-
     nav {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .logo {
-        flex: unset;
-    }
-
-    .nav-links {
-        flex: unset;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #modeBtn {
-        flex: unset;
         text-align: center;
-    }
-
-    header {
-        margin-top: 60px;
     }
 }
