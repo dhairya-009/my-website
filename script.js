@@ -1,37 +1,43 @@
-// Loader hide after page loads
-window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-    loader.classList.add("hidden");
-});
+// DARK MODE SAVE + LOAD
+const btn = document.getElementById("modeBtn");
 
-function showMessage() {
-    alert("🔥 Welcome to my advanced website!");
+// Load saved mode
+if (localStorage.getItem("mode") === "light") {
+    document.body.classList.add("light-mode");
+    btn.innerText = "🌞";
 }
 
-function toggleMode() {
+// Toggle mode
+btn.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
 
-    let btn = document.getElementById("modeBtn");
-
     if (document.body.classList.contains("light-mode")) {
+        localStorage.setItem("mode", "light");
         btn.innerText = "🌞";
     } else {
+        localStorage.setItem("mode", "dark");
         btn.innerText = "🌙";
     }
-}
+});
 
-// Typing Effect
-let text = "Just a little project, for fun 🚀";
-let i = 0;
+// LOADER
+window.addEventListener("load", () => {
+    document.getElementById("loader").classList.add("hidden");
+});
 
-function typeEffect() {
-    if (i < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 50);
+// Typing effect (only runs if element exists)
+let typing = document.getElementById("typing");
+if (typing) {
+    let text = "Just a little project, for fun 🚀";
+    let i = 0;
+
+    function typeEffect() {
+        if (i < text.length) {
+            typing.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeEffect, 50);
+        }
     }
+
+    typeEffect();
 }
-
-typeEffect();
-
-localStorage.setItem("mode", "light");
