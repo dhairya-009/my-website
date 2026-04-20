@@ -27,3 +27,5 @@ function typeEffect() {
 }
 
 typeEffect();
+
+localStorage.setItem("mode", "light");
